@@ -1,3 +1,5 @@
+// ======== V EASY BOYS ========
+
 // Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
 function divisibleByFive(n) {
     return (n % 5 === 0);
@@ -109,5 +111,78 @@ function profitableGamble(prob, prize, pay) {
     return prob * prize > pay;
 }
 
+// ======== EASY BOYS ========
 
+// Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers.
+function bitwiseAND(n1, n2) {
+    return n1 & n2
+}
 
+function bitwiseOR(n1, n2) {
+    return n1 | n2
+}
+
+function bitwiseXOR(n1, n2) {
+    return n1 ^ n2
+}
+
+// Object decon
+function objDecon() {
+    const user = { name: "John", email: "john@example.com", city: "Phoenix", state: "AZ", country: "USA" }
+    const str = `({ name, email, ...rest} = user ).toString()`
+    //The important part of this was the ... operator
+}
+
+// Create a function that returns true if a string contains any spaces.
+function hasSpaces(str) {
+    return str.includes(' ');
+}
+
+// Create a function that takes a whole number as input and returns the shape with that number's amount of sides. Here are the expected outputs to get from these inputs.
+function nSidedShape(n) {
+    switch (n) {
+        case n = 1:
+            return 'circle';
+        case n = 2:
+            return 'semi-circle'
+        case n = 3:
+            return 'triangle';
+        case n = 4:
+            return 'square'
+        case n = 5:
+            return 'pentagon'
+        case n = 6:
+            return 'hexagon'
+        case n = 7:
+            return 'heptagon'
+        case n = 8:
+            return 'octagon'
+        case n = 9:
+            return 'nonagon'
+        case n = 10:
+            return 'decagon'
+    }
+}
+
+// Write a function that takes the last number of a consecutive list of numbers and returns the total of all numbers up to and including it.
+function addUpTo(n) {
+    let total = 0;
+    let newArr = [];
+    for (let i = n; i > 0; i--) {
+        newArr.push(i)
+    }
+    newArr.forEach(num => total += num)
+    return total;
+}
+
+// Write a function that validates whether two strings are identical. Make it case insensitive.
+function match(s1, s2) {
+    return s1.toLowerCase() === s2.toLowerCase();
+}
+
+// Create a function that takes an array of words and transforms it into an array of each word's length.
+function wordLengths(arr) {
+    let newArr = [];
+    arr.forEach(ind => newArr.push(ind.length))
+    return newArr;
+}
