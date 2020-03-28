@@ -186,3 +186,28 @@ function wordLengths(arr) {
     arr.forEach(ind => newArr.push(ind.length))
     return newArr;
 }
+
+// Create a function that takes an array with numbers and return an array with the elements multiplied by two.
+function getMultipliedArr(arr) {
+    let newArr = [];
+    arr.forEach(ind => newArr.push(ind * 2));
+    return newArr;
+}
+//Write a function that takes an integer and:
+// If the number is a multiple of 3, return "Hello".
+// If the number is a multiple of 5, return "World".
+// If the number is a multiple of both 3 and 5, return "Hello World".
+function helloWorld(num) {
+    if (num % 3 == 0 && num % 5 == 0) {
+        return 'Hello World'
+    } else if (num % 5 == 0) {
+        return 'World'
+    } else if (num % 3 == 0) {
+        return 'Hello'
+    }
+}
+
+//Create a function that returns the number of syllables in a simple string. The string is made up of short repeated words like "Lalalalalalala" (which would have 7 syllables).
+function countSyllables(str) {
+    return str.length / 2;
+}
