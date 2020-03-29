@@ -248,5 +248,22 @@ function isPlural(word) {
     return (word[word.length - 1] == "s");
 }
 
+//Create a function that takes three numbers as arguments and returns true if it's a triangle and false if not.
 
+function isTriangle(a, b, c) {
+    return (a + b > c && a + c > b && c + b > a)
+}
+
+//Create a function that returns the ASCII value of the passed in character.
+function ctoa(c) {
+    return c.charCodeAt(0);
+}
+
+//Given an array of numbers, create a function which returns the same array but with each element's index in the array added to itself. This means you add 0 to the number at index 0, add 1 to the number at index 1, etc...
+function addIndexes(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = i + arr[i]
+    }
+    return arr;
+}
 
