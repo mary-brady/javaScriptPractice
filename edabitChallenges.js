@@ -211,3 +211,42 @@ function helloWorld(num) {
 function countSyllables(str) {
     return str.length / 2;
 }
+
+// Create a function that returns true if the first array can be nested inside the second
+// arr1 can be nested inside arr2 if:
+// arr1's min is greater than arr2's min.
+// arr1's max is less than arr2's max.
+
+function canNest(arr1, arr2) {
+    if (Math.min(...arr1) > Math.min(...arr2)) {
+        return true
+    } else {
+        return false
+    }
+
+    if (Math.max(...arr1) < Math.max(...arr2)) {
+        return true
+    } else {
+        return false
+    }
+}
+
+// Create a function that determines whether or not it's possible to split a pie fairly given these three parameters:
+
+// Total number of slices.
+// Number of recipients.
+// How many slices each person gets.
+function equalSlices(total, people, each) {
+    if (people === 0) {
+        return true
+    }
+    return people * each <= total
+}
+
+//Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+function isPlural(word) {
+    return (word[word.length - 1] == "s");
+}
+
+
+
